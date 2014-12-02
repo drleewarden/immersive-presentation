@@ -1,0 +1,266 @@
+// body overwrites
+#container-vu{
+  min-width:100%;
+}
+.top-fav{
+  margin: 0 -21px !important;
+}
+.loading-modal{
+  width: 50px;
+  height: 100%;
+}
+
+#loadingX{
+  width: 50px;
+  .gifLoad{
+    width: 50px;
+    background-color: black;
+    border-radius: 5px;
+  }
+}
+input[type="radio"], input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+}
+.x-close{
+  @include main-icon('_close-w.png', 12px, 12px, -1px,3px);
+  margin: 0 2px 0 10px;
+}
+#main-body, #main-body-2{
+  margin: $gutterInners;
+  min-width: 500px;
+  width: 76%;
+  float: left;
+  .pagination{
+    .pag-holder{
+      font-size: 13px;
+    }
+
+    .active-grey{
+      color: #c1c1c1;
+    }
+  }
+
+  .starON{
+    background: url(../images/icons/star-selected.png);
+    background-size: 22px;
+
+  }
+  .send{
+    float: right;
+    margin-right: 15px;
+  }
+
+  .tab{
+    margin: 0px 24px;
+  }
+
+  .inner-tab{
+    background-color: $blue-inner;
+    padding: 1px 0 10px;
+    margin: 10px 0 20px;
+    padding: 0 0 10px;
+
+    li{
+      width: 500px;
+      padding: 0 0 10px;
+      span.value{
+        padding: 0 20px;
+      }
+      span.career-key{
+        display: table-cell;
+        width: 330px;
+        float: left;
+        color: #2a6496;
+      }
+    }
+  }
+  .email{
+      background: url(../images/icons/mail.png);
+      width: 22px;
+      background-size: 22px;
+      height: 18px;
+      display: inline-block;
+      margin: 0 0 0 20px;
+      cursor: pointer;
+
+  }
+  .favourites{
+    display: inline-block;
+    margin: 0 0px 0 -11px;
+  }
+
+  .star{
+      width: 22px;
+      background-size: 22px;
+      height: 21px;
+      display: inline-block;
+      margin: 0 0 0 20px;
+
+  }
+  .starX{
+    width: 22px;
+    background-size: 22px;
+    height: 21px;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    background: url(../images/icons/star-selected.png);
+    background-size: 22px;
+
+  }
+
+  .starOFF{
+    background: url(../images/icons/star.png);
+    background-size: 22px;
+  }
+  .nav-tabs {
+    outline:none !important;
+    border-bottom: none;
+  }
+  .tab-pane.active{
+    margin-top: 1px;
+    border-top: $blue-aside 6px solid;
+  }
+  .nav > li {
+
+    &.active a{
+      background-color: $blue-aside;
+      color: white;
+      outline:none !important;
+
+    }
+    a{
+      background-color:  white;
+      border: 1px solid #eeeeee;
+      border-bottom: 0;
+      color: $blue-light;
+    }
+  }
+  .blue-head{
+
+    h4{
+      font-size: 18px;
+      margin: 15px 33px;
+      padding: 20px 7px 0;
+      color: black;
+      font-weight: bold;
+    }
+
+    li{
+      font-size: 14px;
+      padding: 20px 0 0;
+      list-style-type: disc;
+    }
+  }
+
+
+}
+.small-green{
+  color: $lightgreen;
+  font-size: $para;
+
+}
+
+.full-details{
+  background: $blue-tab;
+  color: white;
+  float: right;
+  border: none;
+  padding: 6px 13px;
+  margin-right: 24px;
+}
+article{
+  padding: 10px;
+
+  .pagination{
+    width: 100%;
+  }
+
+  &.courses{
+   @include border-line(1px , $borderColor);
+
+    h2{
+      margin: 0px 0 -10px;
+      font-size: 24px;
+    }
+
+    .course-container{
+      a{
+        outline:none !important;
+      }
+    }
+    .courseToggle{
+      padding: 5px 0 30px;
+    }
+
+    h3{
+      color: rgb(0,102,204);
+      font-size: $main-h3;
+      cursor: pointer;
+      outline:none !important;
+      margin: 3px 0;
+
+    }
+    .light-arrow{
+      float: left;
+      margin: -8px 10px 0 5px;
+      font-size: 24px;
+      cursor: pointer;
+
+      span{
+        color:  #c1c1c1;
+      }
+    }
+
+    .small-green{
+      margin-left: 24px;
+    }
+
+    p{
+      margin: 0 0 10px 24px;
+    }
+
+
+  }
+  .no-results{
+    span{
+
+      color: $blue-aside;
+    }
+  }
+  //////////////////
+  // Breadcrumbs
+  /////////////////
+  &.filter-crumbs{
+    border: 1px solid #c1c1c1;
+    margin-bottom: 15px;
+    min-height: 45px;
+
+    .send{
+      margin-top: 0px;
+    }
+    .email{
+      margin: 0 -4px !important;
+    }
+    .filter{
+      float: left;
+    }
+
+    li{
+      background: rgb(0,120,193);
+      padding: 1px 4px 2px 10px;
+      margin: 0 0px 10px 10px;
+      float: none;
+      @include border-radius(4px);
+      color: white;
+      display: inline-block;
+
+      .close-f{
+        padding: 0px 0 0px 10px;
+        font-size: 14px;
+        cursor: pointer;
+
+      }
+    }
+  }
+}
